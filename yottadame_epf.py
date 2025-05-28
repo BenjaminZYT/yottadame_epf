@@ -118,6 +118,7 @@ fig_results.update_layout(
 # App
 app = dash.Dash(__name__)
 app.title = "EPF Dividend Dashboard"
+server = app.server
 
 app.layout = html.Div([
     html.H1("\U0001F3AF Predicting EPF Dividend Rates", style={'marginTop': '2rem'}),
@@ -202,5 +203,3 @@ app.layout = html.Div([
         We invite readers and fellow analysts to **improve upon this model**—whether by incorporating new data sources, exploring nonlinear relationships, or introducing better feature engineering. This project is meant as a starting point for deeper, collaborative modeling work.
     ''', style={'marginBottom': '4rem'})
 ])
-
-server = app.server
