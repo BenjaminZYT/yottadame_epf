@@ -203,5 +203,6 @@ app.layout = html.Div([
     ''', style={'marginBottom': '4rem'})
 ])
 
-if __name__ == "__main__":
-    app.run_server(debug=True)
+app = dash.Dash(__name__)
+app.title = "EPF Dividend Dashboard"
+server = app.server
