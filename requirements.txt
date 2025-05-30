@@ -8,3 +8,4 @@ statsmodels
 gunicorn
 numpy
 curl-cffi
+dash-bootstrap-components
