@@ -54,8 +54,13 @@ plt.close()
 app.layout = html.Div([
     html.H1("🎯 Predicting EPF Dividend Rates"),
 
-    html.P("The Employees Provident Fund (EPF) dividend rate is a highly anticipated figure among the Malaysian middle class each year. "
-           "As a benchmark of retirement savings growth, it directly impacts millions of contributors nationwide."),
+    html.P("The Employees Provident Fund (EPF) is Malaysia’s national retirement savings scheme for private and non-pensionable public sector employees. "
+	       "The EPF dividend rate is a highly anticipated figure among the Malaysian middle class each year. "
+	       "As a benchmark of retirement savings growth, it directly impacts millions of contributors nationwide. "
+           "Similar in spirit to the 401(k) system in the United States, it serves as a mandatory, "
+	       "long-term savings vehicle designed to provide financial security after retirement. "
+	       "However, unlike the 401(k), which is typically employer-managed and investment-choice driven, the EPF is centrally administered by a statutory body "
+           "and invests collectively on behalf of all contributors. It guarantees a minimum annual dividend and covers a broader portion of the population by law."),
     html.P("In 2025, the EPF conventional dividend rate was notably high—bringing a wave of optimism and satisfaction among Malaysians."),
     html.P("In this notebook, we build a multiple linear regression model to predict the annual EPF conventional dividend rates, "
            "drawing insights from historical data and economic indicators. The goal is to understand the key drivers behind the dividend rate "
